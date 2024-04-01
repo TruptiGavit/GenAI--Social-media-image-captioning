@@ -1,9 +1,16 @@
 import requests
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+key=os.getenv("My_HuggingFaceHub_Key")
+
 
 API_URL_Semantics = "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-large"
 API_URL_Capgen = "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": f"Bearer {key}"}
 
 def generate_semantics(file):
     response = requests.post(API_URL_Semantics  , headers=headers, data=file)
