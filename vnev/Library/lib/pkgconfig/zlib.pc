@@ -1,0 +1,13 @@
+prefix=C:/Users/ADMIN/Downloads/GenAI/GenAI Projects/APIs/Image to text/vnev/Library
+exec_prefix=C:/Users/ADMIN/Downloads/GenAI/GenAI Projects/APIs/Image to text/vnev/Library
+libdir=C:/Users/ADMIN/Downloads/GenAI/GenAI Projects/APIs/Image to text/vnev/Library/lib
+sharedlibdir=C:/Users/ADMIN/Downloads/GenAI/GenAI Projects/APIs/Image to text/vnev/Library/lib
+includedir=C:/Users/ADMIN/Downloads/GenAI/GenAI Projects/APIs/Image to text/vnev/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
